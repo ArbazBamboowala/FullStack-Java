@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>
+			Customer Login Form
+		</title>
+		<script src="C:/Users/arbaz/Documents/FullStack Java/js/login.js"></script>
+		<link rel = "stylesheet" href="C:/Users/arbaz/Documents/FullStack Java/css/styles.css">
+	</head>
+	<body>
+		<table align="center">
+		<tr>
+			<td>
+				<img src="C:/Users/arbaz/Documents/FullStack Java/images/TE505.jpg" alt="Eficens Logo" width="200" height="100"><br><br>
+			</td>
+		</tr>
+		<tr>
+		<td align = "center">
+		<a href="C:/Users/arbaz/Documents/FullStack Java/index.html">Home</a><br><br>
+		</td>
+		</tr>
+		</table>
+		<div align="center" id="successMessage"></div><br>
+		<div id="errors"></div><br>
+		
+		<form onsubmit="return validateLoginForm();" method="POST" action="product.html">
+		<table align="center">
+		<tr align="center">
+		<td>
+		<label for="email">Email Id:</label><br>
+		<input type="text" id="email" name="email"><br>
+		</td>
+		</tr>
+		<tr align="center">
+			<td>
+			<label for="password">Password:</label><br>
+			<input type="password" id="password" name="password"><br><br>
+			</td>
+		</tr>
+		<tr align = "center">
+			<td align = "center">
+			<button type="submit">Login</button>
+			<input type="button" onclick="clearAllTheFields();" value="Clear All Fields">
+			</td>
+		</tr>
+		</form>
+	</body>
+</html>
